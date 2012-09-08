@@ -1,2 +1,5 @@
 timekeeper
+
+Sample grails application.
+
 ==========
