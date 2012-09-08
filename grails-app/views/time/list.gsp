@@ -28,7 +28,7 @@
 					
 						<th><g:message code="time.job.label" default="Job" /></th>
 					
-						<th><g:message code="time.employee.label" default="Employee" /></th>
+						<th><g:message code="time.user.label" default="User" /></th>
 					
 					</tr>
 				</thead>
@@ -40,7 +40,7 @@
 					
 						<td>${fieldValue(bean: timeInstance, field: "job")}</td>
 					
-						<td>${fieldValue(bean: timeInstance, field: "employee")}</td>
+						<td>${fieldValue(bean: timeInstance, field: "user")}</td>
 					
 					</tr>
 				</g:each>

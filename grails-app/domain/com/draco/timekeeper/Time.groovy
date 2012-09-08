@@ -2,7 +2,7 @@ package com.draco.timekeeper
 
 class Time {	
 	Job job
-	Employee employee
+	User user
 	float hours
     static constraints = {
     }

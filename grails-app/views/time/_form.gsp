@@ -18,11 +18,11 @@
 	<g:select id="job" name="job.id" from="${com.draco.timekeeper.Job.list()}" optionKey="id" required="" value="${timeInstance?.job?.id}" class="many-to-one"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: timeInstance, field: 'employee', 'error')} required">
-	<label for="employee">
-		<g:message code="time.employee.label" default="Employee" />
+<div class="fieldcontain ${hasErrors(bean: timeInstance, field: 'user', 'error')} required">
+	<label for="user">
+		<g:message code="time.user.label" default="user" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="employee" name="employee.id" from="${com.draco.timekeeper.Employee.list()}" optionKey="id" required="" value="${timeInstance?.employee?.id}" class="many-to-one"/>
+	<g:select id="user" name="user.id" from="${com.draco.timekeeper.User.list()}" optionKey="id" required="" value="${timeInstance?.user?.id}" class="many-to-one"/>
 </div>
 

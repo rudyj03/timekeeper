@@ -41,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${timeInstance?.employee}">
+				<g:if test="${timeInstance?.user}">
 				<li class="fieldcontain">
-					<span id="user-label" class="property-label"><g:message code="time.employee.label" default="Employee" /></span>
+					<span id="user-label" class="property-label"><g:message code="time.user.label" default="User" /></span>
 					
-						<span class="property-value" aria-labelledby="user-label"><g:link controller="employee" action="show" id="${timeInstance?.employee?.id}">${timeInstance?.employee?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="user-label"><g:link controller="user" action="show" id="${timeInstance?.user?.id}">${timeInstance?.user?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
